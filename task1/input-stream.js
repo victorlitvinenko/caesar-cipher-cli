@@ -5,16 +5,13 @@ exports.inputStream = function (filePath) {
   if (filePath) {
     if (fs.existsSync(filePath)) {
       inputStream = fs.createReadStream(filePath);
-    }
-    else {
+    } else {
       console.error('Input file path is invalid!');
       process.exit(9);
     }
   } else {
     inputStream = process.stdin;
-    inputStream.on('readable', function () {
-      process.stdin.read();
-    });
+    console.log('Enter your text. Ctrl + C to stop.');
   }
   return inputStream;
 };
