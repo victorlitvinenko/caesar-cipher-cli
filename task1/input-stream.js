@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-exports.inputStream = filePath => {
+exports.inputStream = function (filePath) {
   let inputStream;
   if (filePath) {
     if (fs.existsSync(filePath)) {

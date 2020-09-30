@@ -1,9 +1,9 @@
 const fs = require('fs');
 
-exports.outputStream = filePath => {
+exports.outputStream = function (filePath) {
   let outputStream;
   if (filePath) {
-    outputStream = fs.createWriteStream(filePath, {flags:'a'});
+    outputStream = fs.createWriteStream(filePath, { flags: 'a' });
   } else {
     outputStream = process.stdout;
   }
