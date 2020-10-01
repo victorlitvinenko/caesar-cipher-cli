@@ -6,7 +6,7 @@ exports.inputStream = function (filePath) {
     inputStream = fs.createReadStream(filePath);
   } else {
     inputStream = process.stdin;
-    console.log('Enter your text. Ctrl+C to stop.');
+    console.log('Type your text. Press [Enter] to process. [Ctrl]+[C] to stop.');
   }
   return inputStream;
 };
