@@ -5,6 +5,10 @@ exports.validate = function (action, shift, inputFilePath, outputFilePath) {
     console.error('Action and shift are required options!');
     process.exit(1);
   }
+  if (!['encode', 'decode'].includes(action)) {
+    console.error('Action must be "encode" or "decode"!');
+    process.exit(1);
+  }
   if (shift < 0) {
     console.error('Shift must be positive!');
     process.exit(1);
