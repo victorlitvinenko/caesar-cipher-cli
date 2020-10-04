@@ -1,6 +1,20 @@
 ## Caesar cipher CLI tool.
 *(encrypts only latin letters, case insensitive)*
 
+### Install:
+First you need to clone the repo:
+```
+git clone https://github.com/victorlitvinenko/caesar-cipher-cli.git
+```
+Next go to the repo directory and install all dependencies:
+```
+npm install
+```
+After that type the console command with the node interpreter. For example:
+```
+node ./task1/my_caesar_cli -a encode -s 3
+```
+
 ### Сommand line parameters:
 
 - **-s, --shift** \<number\> - How many characters to shift
@@ -10,6 +24,6 @@
 
 ### Example:
 ```
-$ node task1/my_caesar_cli --action encode --shift 7 --input plain.txt --output encoded.txt
+node task1/my_caesar_cli --action encode --shift 7 --input plain.txt --output encoded.txt
 ```
 *encodes information from the **plain.txt** with a 7 characters shift and writes the result to the **encoded.txt*** 
