@@ -32,3 +32,5 @@ node ./task1/my_caesar_cli -a encode -s 3
 node task1/my_caesar_cli --action encode --shift 7 --input plain.txt --output encoded.txt
 ```
 *encodes information from the **plain.txt** with a 7 characters shift and writes the result to the **encoded.txt*** 
+
+*If one of the files does not exist, an error will appear*
